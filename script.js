@@ -12,3 +12,22 @@ const toggleAns = (ansId, btnId) => {
     $(btnId).html("Show More");
   }
 }
+
+const createModalHtml = (imgIdArr, imgNameArr) => {
+
+  let modalTitleArr = [];
+  let modalBody = "";
+
+  for (let i = 0; i < imgIdArr.length; i++) {
+    modalTitleArr.push(`<span class="chngPic" onclick="chngPic('.c-sharp-1', '#${imgIdArr[i]}')">Example ${i+1}</span>`);
+  }
+  $('#modalTitle').html(modalTitleArr.join(" | "));
+
+  for (let j = 0; j < imgNameArr.length; j++) {
+    let display = j == 0 ? '' : ' style="display: none;"';
+    modalBody += `<img class="modal-content c-sharp-1" id="${imgIdArr[j]}" src="img/${imgNameArr[j]}" ${display}/>`
+  }
+  $('#modalBody').html(modalBody);
+
+  $('#myModal1').modal('show');
+}

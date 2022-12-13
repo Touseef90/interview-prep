@@ -129,7 +129,7 @@
                     A class is a <b>LOGICAL UNIT or BLUEPRINT</b> that contains fields, methods and properties. Class members are:<br>1. Constructor is a method in the class which gets executed when a class object is created.<br>2. A field is <b>a variable of any type. It is basically the data.</b><br>3. A property is a member that provides helps in read and write of private field.<br>4. A method is <b>a code block that contains a series of statements.</b><br><br><b>Object</b> - An object is an <b>INSTANCE</b> of a class.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#myModal1">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" onclick="createModalHtml(['myModal1-1', 'myModal1-2'], ['img-1.png', 'img-2.png'])">View</button>
                       <button type="button" class="btn btn-sm btn-outline-secondary" id="btn-1" onclick="toggleAns('#ans-1', '#btn-1')">Show More</button>
                     </div>
                     <small class="text-muted"></small>
@@ -233,15 +233,12 @@
 
       <!-- Modal Header -->
       <div class="modal-header">
-        <h4 class="modal-title"><span class="chngPic" onclick="chngPic('.c-sharp-1', '#myModal1-1')">Example 1</span> | <span class="chngPic" onclick="chngPic('.c-sharp-1', '#myModal1-2')">Example 2</span></h4>
+        <h4 class="modal-title" id="modalTitle"></h4>
         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
       </div>
 
       <!-- Modal body -->
-      <div class="modal-body">
-        <img class="modal-content c-sharp-1" id="myModal1-1" src="img/img-1.png" />
-        <img class="modal-content c-sharp-1" id="myModal1-2" src="img/img-2.png" style="display: none;" />
-      </div>
+      <div class="modal-body" id="modalBody"></div>
 
       <!-- Modal footer -->
       <div class="modal-footer">

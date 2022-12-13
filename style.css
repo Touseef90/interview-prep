@@ -151,3 +151,7 @@ body {
   height: 225px;
   object-fit: cover;
 }
+
+.card {
+  min-height: 370px;
+}
