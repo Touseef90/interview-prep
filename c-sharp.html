@@ -125,12 +125,12 @@
                 <img class="thumbnail-img" src="img/img-1.png" />    
                 <div class="card-body">
                   <p class="card-text">What are the main concepts of OOPS? What are Classess and Objects in C#?</p>
-                  <p class="card-text">Main concepts of OOPS are Objects, Classes, Inheritance, Polymorphism, Abstraction and Encapsulation.
+                  <p class="card-text" id="ans-1" style="display: none;">Main concepts of OOPS are Objects, Classes, Inheritance, Polymorphism, Abstraction and Encapsulation.
                     A class is a <b>LOGICAL UNIT or BLUEPRINT</b> that contains fields, methods and properties. Class members are:<br>1. Constructor is a method in the class which gets executed when a class object is created.<br>2. A field is <b>a variable of any type. It is basically the data.</b><br>3. A property is a member that provides helps in read and write of private field.<br>4. A method is <b>a code block that contains a series of statements.</b><br><br><b>Object</b> - An object is an <b>INSTANCE</b> of a class.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
                       <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#myModal1">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary" id="btn-1" onclick="toggleAns('#ans-1', '#btn-1')">Show More</button>
                     </div>
                     <small class="text-muted"></small>
                   </div>
@@ -146,7 +146,7 @@
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
                       <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Show More</button>
                     </div>
                     <small class="text-muted"></small>
                   </div>
@@ -162,7 +162,7 @@
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
                       <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Show More</button>
                     </div>
                     <small class="text-muted"></small>
                   </div>
@@ -179,7 +179,7 @@
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
                       <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Show More</button>
                     </div>
                     <small class="text-muted"></small>
                   </div>
@@ -195,7 +195,7 @@
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
                       <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Show More</button>
                     </div>
                     <small class="text-muted"></small>
                   </div>
@@ -211,7 +211,7 @@
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
                       <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Show More</button>
                     </div>
                     <small class="text-muted"></small>
                   </div>
@@ -228,18 +228,19 @@
 
 <!-- The Modal -->
 <div class="modal" id="myModal1">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-xl">
     <div class="modal-content">
 
       <!-- Modal Header -->
       <div class="modal-header">
-        <h4 class="modal-title">Modal 1</h4>
+        <h4 class="modal-title"><span class="chngPic" onclick="chngPic('.c-sharp-1', '#myModal1-1')">Example 1</span> | <span class="chngPic" onclick="chngPic('.c-sharp-1', '#myModal1-2')">Example 2</span></h4>
         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
       </div>
 
       <!-- Modal body -->
       <div class="modal-body">
-        <img src="img/img-1.png" />
+        <img class="modal-content c-sharp-1" id="myModal1-1" src="img/img-1.png" />
+        <img class="modal-content c-sharp-1" id="myModal1-2" src="img/img-2.png" style="display: none;" />
       </div>
 
       <!-- Modal footer -->
@@ -256,6 +257,7 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" 
       integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
   </body>
 </html>
