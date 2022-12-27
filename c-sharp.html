@@ -126,7 +126,12 @@
                 <div class="card-body">
                   <p class="card-text">What are the main concepts of OOPS? What are Classess and Objects in C#?</p>
                   <p class="card-text" id="ans-1" style="display: none;">Main concepts of OOPS are Objects, Classes, Inheritance, Polymorphism, Abstraction and Encapsulation.
-                    A class is a <b>LOGICAL UNIT or BLUEPRINT</b> that contains fields, methods and properties. Class members are:<br>1. Constructor is a method in the class which gets executed when a class object is created.<br>2. A field is <b>a variable of any type. It is basically the data.</b><br>3. A property is a member that provides helps in read and write of private field.<br>4. A method is <b>a code block that contains a series of statements.</b><br><br><b>Object</b> - An object is an <b>INSTANCE</b> of a class.</p>
+                    A class is a <b>LOGICAL UNIT or BLUEPRINT</b> that contains fields, methods and properties. Class members are:
+                    <br>1. Constructor is a method in the class which gets executed when a class object is created.
+                    <br>2. A field is <b>a variable of any type. It is basically the data.</b>
+                    <br>3. A property is a member that provides helps in read and write of private field.
+                    <br>4. A method is <b>a code block that contains a series of statements.</b>
+                    <br><br><b>Object</b> - An object is an <b>INSTANCE</b> of a class.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
                       <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" onclick="createModalHtml(['_one', '_two', '_thr'], ['oops-1.png', 'oops-2.png', 'oops-3.png'])">View</button>
@@ -142,7 +147,8 @@
                 <img class="thumbnail-img" src="img/inheritance.png" />
                 <div class="card-body">
                   <p class="card-text">What is Inheritance? Why Inheritance is important?</p>
-                  <p class="card-text" id="ans-2" style="display: none;">Inheritance is creating a <b>PARENT-CHILD</b> relationship between two classes where child class will automatically get the properties and methods of the parent.<br> Inheritance is good for: <b>REUSABILITY</b> and <b>ABSTRACTION</b> of code.</p>
+                  <p class="card-text" id="ans-2" style="display: none;">Inheritance is creating a <b>PARENT-CHILD</b> relationship between two classes where child class will automatically get the properties and methods of the parent.
+                    <br> Inheritance is good for: <b>REUSABILITY</b> and <b>ABSTRACTION</b> of code.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
                       <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" onclick="createModalHtml(['_one'], ['inheritance.png'])">View</button>
@@ -191,7 +197,11 @@
                 <img class="thumbnail-img" src="img/typesOfInheritance.png" />
                 <div class="card-body">
                   <p class="card-text">What are the different types of Inheritance?</p>
-                  <p class="card-text" id="ans-5" style="display: none;">There are four types of inheritance <br><b>Single Inheritance</b> <br><b>Multiple Inheritance</b> <br><b>Multi Level Inheritance</b> <br><b>Hierarchical Inheritance</b></p>
+                  <p class="card-text" id="ans-5" style="display: none;">There are four types of inheritance 
+                    <br><b>Single Inheritance</b> 
+                    <br><b>Multiple Inheritance</b> 
+                    <br><b>Multi Level Inheritance</b> 
+                    <br><b>Hierarchical Inheritance</b></p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
                       <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" onclick="createModalHtml(['_one'], ['typesOfInheritance.png'])">View</button>
@@ -207,11 +217,68 @@
                 <img class="thumbnail-img" src="img/polymorphism-1.png" />
                 <div class="card-body">
                   <p class="card-text">What is Polymorphism and what are its types?</p>
-                  <p class="card-text" id="ans-6" style="display: none;">Polymorphism is the ability of a variable, object, or function to take on <b>MULTIPLE FORMS<b>.</p>
+                  <p class="card-text" id="ans-6" style="display: none;">Polymorphism is the ability of a variable, object, or function to take on <b>MULTIPLE FORMS</b>.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
                       <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" onclick="createModalHtml(['_one', '_two'], ['polymorphism-1.png', 'polymorphism-2.png'])">View</button>
                       <button type="button" class="btn btn-sm btn-outline-secondary" id="btn-6" onclick="toggleAns('#ans-6', '#btn-6')">Show More</button>
+                    </div>
+                    <small class="text-muted"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img class="thumbnail-img" src="img/encapsulation.png" />
+                <div class="card-body">
+                  <p class="card-text">What is Encapsulation?</p>
+                  <p class="card-text" id="ans-7" style="display: none;">Encapsulation means <b>WRAPPING</b> of data and methods/properties into a single unit.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" onclick="createModalHtml(['_one'], ['encapsulation.png'])">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary" id="btn-7" onclick="toggleAns('#ans-7', '#btn-7')">Show More</button>
+                    </div>
+                    <small class="text-muted"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img class="thumbnail-img" src="img/overloading.png" />
+                <div class="card-body">
+                  <p class="card-text">What is Method Overloading? In how many ways a method can be overloaded?</p>
+                  <p class="card-text" id="ans-8" style="display: none;">Method Overloading is a type of polymorphism in which we can create multiple methods of the <b>same name in the same class</b>, and all methods work in different ways.
+                    <br>It can be done in 3 ways:
+                    <br>Number of parameters are different
+                    <br>Type of parameters are different
+                    <br>Order of parameters are different</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" onclick="createModalHtml(['_one'], ['overloading.png'])">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary" id="btn-8" onclick="toggleAns('#ans-8', '#btn-8')">Show More</button>
+                    </div>
+                    <small class="text-muted"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img class="thumbnail-img" src="img/overloading-overriding.png" />
+                <div class="card-body">
+                  <p class="card-text">What is the difference between Overloading and Overriding?</p>
+                  <p class="card-text" id="ans-9" style="display: none;">1. Method Overloading is a type of polymorphism in which we can create multiple methods of the <b>same name in the same class</b>, and all methods work in different ways.<br>
+                    <br>1. Method Overriding is having methods with the <b>SAME NAME and SIGNATURE</b> but in different classes.<br>
+                    <br>2. Method Overloading will not use any such kewords.<br>
+                    <br>2. Overriding uses <b>VIRTUAL</b> keyword for base class method and <b>OVERRIDE</b> keyword for derived class method.<br>
+                    <br>3. Method overloading doesn't need inheritance. It is in same class.<br>
+                    <br>3. Method overriding <b>NEEDS INHERITANCE(Base class/Derived class)</b>. It is not possible in same class.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" onclick="createModalHtml(['_one'], ['overloading-overriding.png'])">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary" id="btn-9" onclick="toggleAns('#ans-9', '#btn-9')">Show More</button>
                     </div>
                     <small class="text-muted"></small>
                   </div>
