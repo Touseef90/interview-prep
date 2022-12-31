@@ -122,14 +122,14 @@
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             <div class="col">
               <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-    
+                <img class="thumbnail-img" src="img/what-is-js-1.png" />
                 <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text">What is JavaScript?</p>
+                  <p class="card-text" id="ans-1" style="display: none;">JavaScript is a very powerful client-side scripting language. JavaScript is used mainly for enhancing the interaction of a user with the webpage. In other words, you can make your webpage more lively and interactive, with the help of JavaScript. JavaScript is also being used widely in game development and Mobile application development.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Show More</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" onclick="createModalHtml(['_one'], ['what-is-js-1.png'])">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary" id="btn-1" onclick="toggleAns('#ans-1', '#btn-1')">Show More</button>
                     </div>
                     <small class="text-muted"></small>
                   </div>
@@ -138,14 +138,15 @@
             </div>
             <div class="col">
               <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-    
+                <img class="thumbnail-img" src="img/data-type-1.png" />
                 <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text">What are the different data types present in javascript?</p>
+                  <p class="card-text" id="ans-2" style="display: none;"><b>1. Primitive types</b> String, Number, BigInt, Undefined, Null, and Symbol
+                    <br><b>2. Non-primitive types</b> Object.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Show More</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" onclick="createModalHtml(['_one', '_two'], ['data-type-1.png', 'data-type-2.png'])">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary" id="btn-2" onclick="toggleAns('#ans-2', '#btn-2')">Show More</button>
                     </div>
                     <small class="text-muted"></small>
                   </div>
@@ -154,31 +155,14 @@
             </div>
             <div class="col">
               <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-    
+                <img class="thumbnail-img" src="img/hoisting.png" />
                 <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text">What is Hoisting in JavaScript?</p>
+                  <p class="card-text" id="ans-3" style="display: none;">Hoisting is the default behaviour of javascript where all the variable and function declarations are moved on top.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Show More</button>
-                    </div>
-                    <small class="text-muted"></small>
-                  </div>
-                </div>
-              </div>
-            </div>
-    
-            <div class="col">
-              <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-    
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Show More</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" onclick="createModalHtml(['_one'], ['hoisting.png'])">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary" id="btn-3" onclick="toggleAns('#ans-3', '#btn-3')">Show More</button>
                     </div>
                     <small class="text-muted"></small>
                   </div>
@@ -187,14 +171,14 @@
             </div>
             <div class="col">
               <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-    
+                <img class="thumbnail-img" src="img/comparison-opt.png" />
                 <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text">What is difference between == and === operators?</p>
+                  <p class="card-text" id="ans-4" style="display: none;">The difference between both the operators is that == is used to compare values whereas, === is used to compare both values and types.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Show More</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" onclick="createModalHtml(['_one'], ['comparison-opt.png'])">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary" id="btn-4" onclick="toggleAns('#ans-4', '#btn-4')">Show More</button>
                     </div>
                     <small class="text-muted"></small>
                   </div>
@@ -203,14 +187,32 @@
             </div>
             <div class="col">
               <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-    
+                <img class="thumbnail-img" src="img/var-let-const.png" />
                 <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text">Difference between 'var' and 'let' keyword in javascript?</p>
+                  <p class="card-text" id="ans-5" style="display: none;">1. From the very beginning, the 'var' keyword was used in JavaScript programming whereas the keyword 'let' was just added in 2015.
+                    <br>2. The keyword 'var' has a Function Scope. Anywhere in the function, but 'let' keyword is limited to the block in which it is declared. 'let' is Block Scope.
+                    <br>3. In ECMAScript 2015, let and const are hoisted but not initialized. Referencing the variable in the block before the variable declaration results in a ReferenceError.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Show More</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" onclick="createModalHtml(['_one'], ['var-let-const.png'])">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary" id="btn-5" onclick="toggleAns('#ans-5', '#btn-5')">Show More</button>
+                    </div>
+                    <small class="text-muted"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img class="thumbnail-img" src="img/js-coercion.png" />
+                <div class="card-body">
+                  <p class="card-text">What is Implicit Type Coercion in javascript?</p>
+                  <p class="card-text" id="ans-6" style="display: none;">Implicit type coercion in javascript is the automatic conversion of value from one data type to another. It takes place when the operands of an expression are of different data types.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" onclick="createModalHtml(['_one'], ['js-coercion.png'])">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary" id="btn-6" onclick="toggleAns('#ans-6', '#btn-6')">Show More</button>
                     </div>
                     <small class="text-muted"></small>
                   </div>
@@ -225,49 +227,25 @@
   </div>
 </div>
 
-<div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
+<!-- The Modal -->
+<div class="modal" id="myModal1">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
 
-    <div class="mySlides">
-      <div class="numbertext">1 / 4</div>
-      <img src="img_nature_wide.jpg" style="width:100%">
-    </div>
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title" id="modalTitle"></h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
 
-    <div class="mySlides">
-      <div class="numbertext">2 / 4</div>
-      <img src="img_snow_wide.jpg" style="width:100%">
-    </div>
+      <!-- Modal body -->
+      <div class="modal-body" id="modalBody"></div>
 
-    <div class="mySlides">
-      <div class="numbertext">3 / 4</div>
-      <img src="img_mountains_wide.jpg" style="width:100%">
-    </div>
-    
-    <div class="mySlides">
-      <div class="numbertext">4 / 4</div>
-      <img src="img_lights_wide.jpg" style="width:100%">
-    </div>
-    
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
 
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
-
-
-    <div class="column">
-      <img class="demo cursor" src="img_nature_wide.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img_snow_wide.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img_mountains_wide.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img_lights_wide.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
     </div>
   </div>
 </div>
