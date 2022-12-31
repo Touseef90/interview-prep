@@ -290,7 +290,7 @@
                 <img class="thumbnail-img" src="img/overriding-hiding.png" />
                 <div class="card-body">
                   <p class="card-text">What is the difference between Method Overriding and Method Hiding?</p>
-                  <p class="card-text" id="ans-10" style="display: none;">In Method Hiding, you can hide the implementation of the methods of a base class from the derived class using the <b>new keyword</b></p>
+                  <p class="card-text" id="ans-10" style="display: none;">In Method Hiding, we can hide the implementation of the methods of a base class from the derived class using the <b>new keyword</b></p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
                       <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" onclick="createModalHtml(['_one'], ['overriding-hiding.png'])">View</button>
@@ -441,6 +441,26 @@
                     <div class="btn-group">
                       <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" onclick="createModalHtml(['_one'], ['boxing-unboxing.png'])">View</button>
                       <button type="button" class="btn btn-sm btn-outline-secondary" id="btn-18" onclick="toggleAns('#ans-18', '#btn-18')">Show More</button>
+                    </div>
+                    <small class="text-muted"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img class="thumbnail-img" src="img/string-stringbuilder-1.png" />
+                <div class="card-body">
+                  <p class="card-text">What is the difference between "String" and "StringBuilder"? When to use what?</p>
+                  <p class="card-text" id="ans-19" style="display: none;">String is IMMUTABLE in C#.
+                    <br>It means if we define one string then we couldn't modify it. Every time we assign value to it, it will create a new string.
+                    <br>StringBuilder is MUTABLE in C#.
+                    <br>This means that if any manipulation will be done on string, it will not create a new instance every time.
+                    <br>If we want to change a string multiple times, then StringBuilder is a better option from <b>performance</b> point of view because it will not require new memory every time.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" onclick="createModalHtml(['_one', '_two'], ['string-stringbuilder-1.png', 'string-stringbuilder-2.png'])">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary" id="btn-19" onclick="toggleAns('#ans-19', '#btn-19')">Show More</button>
                     </div>
                     <small class="text-muted"></small>
                   </div>
